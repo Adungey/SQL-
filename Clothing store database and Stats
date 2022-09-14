@@ -1,0 +1,17 @@
+insert into Clothing values (1, "jean shorts", 15, 14, "Dark Blue");					
+insert into Clothing values (2, "jean pants", 20, 15, "Distressed");					
+insert into Clothing values (3, "casual shirts", 45, 10, "Neutral");					
+insert into Clothing values (4, "socks female", 7, 8, "Multi_colored");					
+insert into Clothing values (5, "socks male", 6, 9.50, "Black");					
+insert into Clothing values (6, "tank tops", 8, 12, "Bright");					
+insert into Clothing values (7, "swimsuits", 9, 30, "Multi_colored" );					
+insert into Clothing values (8, "undergarments male", 11, 7, "Dark_colors" );					
+insert into Clothing values (9, "undergarments female", 13, 10, "Neutrals");					
+insert into Clothing values (10, "biker shorts", 18, 12, "Multi_colored");					
+insert into Clothing values (11, "yoga pants", 10, 25, "Fall_colors");					
+insert into Clothing values (12, "yoga crop pants", 15, 15, "Black");					
+insert into Clothing values (13, "crop top", 19, 16, "Printed");					
+insert into Clothing values (14, "big & tall shirts male", 21, 22, "Printed");					
+insert into Clothing values (15, "plus shirts female", 25, 24, "Printed");					
+SELECT * FROM Clothing					
+order by quantity asc;
