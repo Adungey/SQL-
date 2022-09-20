@@ -1,0 +1,27 @@
+Create table Singers
+(id INTEGER PRIMARY KEY, name TEXT, song TEXT, origin_country TEXT);
+
+Insert into singers values(1, "Elton John", "Rocketman", "UK");
+Insert into singers values(2, "Stevie Nicks", "Gypsy", "USA");
+Insert into singers values(3, "John Lennon", "Let it be", "UK");
+Insert into singers values(4, "Janis Joplin", "Cry Baby", "USA");
+Insert into singers values(5, "Stevie Wonder", "Superstition", "USA");
+Insert into singers values(6, "David Bowie", "Changes", "UK");
+Insert into singers values(7, "Adele", "When We Were Young","UK");
+Insert into singers values(8, "Julie Andrews", "A Spoon Full of Sugar", "UK");
+Create table singers_continued									
+(id INTEGER PRIMARY KEY, name TEXT, genre TEXT, Band_name TEXT);									
+Insert into singers_continued values(1, "Elton John", "Pop", "Elton John");									
+Insert into singers_continued values(2, "Stevie Nicks", "Pop", "Fleetwood Mac");									
+Insert into singers_continued values(3, "John Lennon", "Alternative", "Beetles");									
+Insert into singers_continued values(4, "Janis Joplin", "Pop", "Full Tilt Boogie Band");									
+Insert into singers_continued values(5, "Stevie Wonder", "R&B", "Stevie Wonder's Superego");									
+Insert into singers_continued values(6, "David Bowie", "Pop", "Tin Machine");									
+Insert into singers_continued values(7, "Adele", "Pop Soul", "Adele");									
+Insert into singers_continued values(8, "Julie Andrews", "Musicals", "Julie Andrews");									
+
+select a.id, a.name, b.band_name, a.song, a.origin_country, 
+b.genre
+from singers a
+join singers_continued b
+ON a.id=b.id;
